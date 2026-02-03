@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-02</title>
+</head>
+<body>
+    <h1>Campus Visit Feedback Form</h1>
+        <form action="http://www.bahria.com" method="post">
+        <!-- Name and Email Fields -->
+        <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        </div>
+
+        <div>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- Checkboxes for what they liked most -->
+        <div>
+            <label>What did you like most about our campus?</label>
+            <div>
+                    <label>
+                        <input type="checkbox" name="liked" value="campus">
+                        Campus
+                    </label>
+                    <label>
+                        <input type="checkbox" name="liked" value="students">
+                        Students
+                    </label>
+                    <label>
+                        <input type="checkbox" name="liked" value="location">
+                        Location
+                    </label>
+                    <label>
+                        <input type="checkbox" name="liked" value="atmosphere">
+                        Atmosphere
+                    </label>
+                    <label>
+                        <input type="checkbox" name="liked" value="dorm_rooms">
+                        Dorm Rooms
+                    </label>
+                    <label>
+                        <input type="checkbox" name="liked" value="sports">
+                        Sports
+                    </label>
+            </div>
+        </div>
+
+        <!-- Radio buttons for how they became interested -->
+        <div>
+            <label>How did you become interested in our college?</label>
+            <div>
+                    <label>
+                        <input type="radio" name="interest" value="friends" required>
+                        Friends
+                    </label>
+                    <label>
+                        <input type="radio" name="interest" value="television">
+                        Television
+                    </label>
+                    <label>
+                        <input type="radio" name="interest" value="internet">
+                        Internet
+                    </label>
+                    <label>
+                        <input type="radio" name="interest" value="other">
+                        Other
+                    </label>
+            </div>
+        </div>
+
+        <!-- Text area for additional comments -->
+        <div>
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="5" placeholder="Please share any additional feedback..."></textarea>
+        </div>
+
+        <!-- Submit and Reset buttons -->
+        <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
