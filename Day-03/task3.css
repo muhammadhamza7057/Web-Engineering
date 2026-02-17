@@ -1,0 +1,52 @@
+body {
+	margin: 0;
+	font-family: "Georgia", serif;
+	background-color: #f5f0e6;
+}
+
+.page-header {
+	padding: 16px 24px;
+}
+
+.page-header h1 {
+	margin: 0 0 8px 0;
+}
+
+.container {
+	background-color: #ffffff;
+	padding: 16px;
+	overflow: hidden;
+}
+
+.sidebar {
+	float: left;
+	width: 30%;
+	background-color: #f7b7ff;
+	padding: 16px;
+	box-sizing: border-box;
+}
+
+.main {
+	float: right;
+	width: 68%;
+	background-color: #f6b0a8;
+	padding: 16px;
+	box-sizing: border-box;
+}
+
+.page-footer {
+	padding: 12px 24px;
+	background-color: #ffffff;
+}
+
+@media (max-width: 700px) {
+	.sidebar,
+	.main {
+		float: none;
+		width: 100%;
+	}
+
+	.page-footer {
+		display: none;
+	}
+}
