@@ -1,0 +1,113 @@
+/* Component-Specific Styles */
+
+/* Login Component Additional Styles */
+.login-container .login-card {
+  animation: slideIn 0.5s ease-out;
+}
+
+/* Message Component Additional Styles */
+.message-container {
+  width: 100%;
+}
+
+.message-card {
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Toggle Message Component Additional Styles */
+.toggle-message-container {
+  width: 100%;
+}
+
+.toggle-message-card {
+  animation: slideIn 0.5s ease-out;
+}
+
+/* Animations for smooth transitions */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Loading animation for components */
+.loading {
+  animation: pulse 1.5s infinite;
+}
+
+/* Focus states for accessibility */
+button:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+button:focus-visible {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+/* Ensure proper touch targets on mobile */
+@media (max-width: 768px) {
+  button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Smooth color transitions */
+button {
+  transition: all 0.3s ease;
+}
+
+/* Text selection style */
+::selection {
+  background: #667eea;
+  color: white;
+}
+
+::-moz-selection {
+  background: #667eea;
+  color: white;
+}
+
+/* Scrollbar styling for better aesthetics */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #764ba2;
+}
